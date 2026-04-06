@@ -1,3 +1,7 @@
+# ---
+
+> OpenClaw AI Agent Skill
+
 ---
 name: auto-dream
 description: Automatic memory consolidation inspired by Claude Code's autoDream/KAIROS. Runs as a background cron job every 24h — reviews recent sessions, consolidates memory, prunes stale entries, and updates MEMORY.md. Zero manual intervention needed. Use to enable always-on memory maintenance.
@@ -203,3 +207,13 @@ Default values (can be adjusted):
 - No code execution beyond file read/write
 - If dream fails, logs error and retries next cycle
 - MEMORY.md changes are additive/editorial, never destructive rewrites
+
+## Installation
+
+```bash
+cp -r auto-dream/ ~/.openclaw/workspace/skills/auto-dream/
+```
+
+## License
+
+MIT © [Sentra Technology](https://github.com/Icattj)
